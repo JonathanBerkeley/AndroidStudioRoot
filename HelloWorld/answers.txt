@@ -1,0 +1,9 @@
+Q.1
+activity_main.xml
+
+Q.2
+app_name
+
+Q.3
+AVD Manager
+
