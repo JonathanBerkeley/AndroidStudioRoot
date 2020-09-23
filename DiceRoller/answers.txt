@@ -1,0 +1,5 @@
+Q.1
+setContentView()
+
+Q.2
+android:layout_width="wrap_content"
