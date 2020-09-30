@@ -8,17 +8,35 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center_vertical"
     android:orientation="vertical"
+    android:layout_alignParentBottom="true"
     tools:context=".MainActivity" >
 
     <ImageView
-        android:id="@+id/dice_image"
-        app:srcCompat="@drawable/empty_dice"
-        android:layout_width="wrap_content"
+        android:id="@+id/dice_imageA"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal" />
+        android:layout_weight="1"
+        app:srcCompat="@drawable/empty_dice"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/dice_imageB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/empty_dice"
+        tools:ignore="ContentDescription" />
 
     <TextView
-        android:id="@+id/result_text"
+        android:id="@+id/result_textA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/hello_world"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/result_textB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
