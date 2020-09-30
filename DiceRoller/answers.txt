@@ -1,5 +1,22 @@
+01.2:
 Q.1
 setContentView()
 
 Q.2
 android:layout_width="wrap_content"
+
+01.3:
+Q.1
+tools:src
+
+Q.2
+setImageResource()
+
+Q.3
+The variable will be initialized later. I promise!
+
+Q.4
+targetSdkVersion
+
+Q.5
+The class is part of the Android Jetpack libraries.
