@@ -1,0 +1,14 @@
+Q.1
+LinearLayout
+
+Q.2
+TextView > TextView, ImageView, ScrollView
+
+Q.3
+True
+
+Q.4
+False
+
+Q.5
+ImageView

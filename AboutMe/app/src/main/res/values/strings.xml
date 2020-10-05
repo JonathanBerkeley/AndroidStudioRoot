@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AboutMe</string>
+    <string name="name">Jonathan Berkeley</string>
+    <string name="yellow_star">Yellow star</string>
+    <string name="bio">Hello, world.
+    \n\nThis is a testing paragraph.
+    \nMy name is Jonathan and I am learning to code apps.
+    \nThis is my first time using the Kotlin language.
+    \n\nI don\'t have anything to write here,
+    \nit\'s merely to take up space for testing the scroll view.
+    \nIf you are reading this then that\'s strange,
+    \nthis text was not intended for anyone to read.
+    \n\nThis is the final paragraph.
+    \nYet more space being filled with meaningless text.
+    \nI could have used lorem ipsum for this, I guess.
+    \nSomething inspired me to write this instead.
+    \n\nOkay goodbye!\n\n</string>
+    <string name="down_arrow">Down arrow</string>
+</resources>
