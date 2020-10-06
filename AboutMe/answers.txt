@@ -1,3 +1,4 @@
+0.2.1
 Q.1
 LinearLayout
 
@@ -12,3 +13,16 @@ False
 
 Q.5
 ImageView
+
+0.2.2
+Q.1
+TextView
+
+Q.2
+gone
+
+Q.3
+False
+
+Q.4
+Button views are clickable, and on click, the attached click listener performs an action.

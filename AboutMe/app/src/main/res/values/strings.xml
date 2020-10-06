@@ -16,4 +16,6 @@
     \nSomething inspired me to write this instead.
     \n\nOkay goodbye!\n\n</string>
     <string name="down_arrow">Down arrow</string>
+    <string name="nickname_query">What is your Nickname?</string>
+    <string name="done">Done</string>
 </resources>
