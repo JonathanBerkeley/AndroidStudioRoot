@@ -1,0 +1,15 @@
+02.3
+Q.1
+At least one horizontal and one vertical constraint.
+
+Q.2
+Wrap content
+
+Q.3
+True
+
+Q.4
+A ConstraintLayout
+
+Q.5
+Bidirectional constraints
