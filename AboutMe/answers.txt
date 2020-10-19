@@ -14,6 +14,7 @@ False
 Q.5
 ImageView
 
+
 0.2.2
 Q.1
 TextView
@@ -26,3 +27,21 @@ False
 
 Q.4
 Button views are clickable, and on click, the attached click listener performs an action.
+
+
+0.2.4
+Q.1
+Every time findViewById() is called, it traverses the view hierarchy.
+
+Q.2
+A convenient way to integrate data with the app, putting more computational strain on compilation and less on runtime computing, which is preferable for the end-user.
+Also makes codebase neater to navigate for large projects.
+
+Q.3
+Calling findViewById() generates a compiler error.
+
+Q.4
+You wrap it around your root view in the layout.
+
+Q.5
+android:text="@={myDataClass.property}"
