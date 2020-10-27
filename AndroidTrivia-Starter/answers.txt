@@ -7,3 +7,18 @@ Q.2
 You can use a Fragment in more than one Activity.
 One Activity can have multiple fragments.
 Use the <fragment> tag to define the place in a layout file where a Fragment is to be inserted.
+
+03.3
+Q.1
+Fragment A might send data that's a different type than Fragment B needs. 
+For example, Fragment A might send a string but Fragment B requests an integer, resulting in a return value of zero.
+
+Q.2
+Generates simple object and builder classes for type-safe access to arguments specified for destinations and actions.
+
+Generates a method for each action that you've defined in the navigation graph.
+
+Prevents your code from using the wrong key when extracting data from a bundle.
+
+Q.3
+A task that your app initiates without knowing which app or Activity will handle the task.
