@@ -6,6 +6,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import timber.log.Timber
 
 
 class MainActivity : AppCompatActivity() {
@@ -14,8 +15,34 @@ class MainActivity : AppCompatActivity() {
     lateinit var resultTextA : TextView
     lateinit var resultTextB : TextView
 
+    override fun onStart() {
+        super.onStart()
+        Timber.i("onStart called")
+    }
+    override fun onResume() {
+        super.onResume()
+        Timber.i("onResume called")
+    }
+    override fun onPause() {
+        super.onPause()
+        Timber.i("onPause called")
+    }
+    override fun onStop() {
+        super.onStop()
+        Timber.i("onStop called")
+    }
+    override fun onDestroy() {
+        super.onDestroy()
+        Timber.i("onDestroy called")
+    }
+    override fun onRestart() {
+        super.onRestart()
+        Timber.i("onRestart called")
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Timber.i("onCreate called")
         setContentView(R.layout.activity_main)
         diceImageA = findViewById(R.id.dice_imageA)
         diceImageB = findViewById(R.id.dice_imageB)

@@ -20,3 +20,16 @@ targetSdkVersion
 
 Q.5
 The class is part of the Android Jetpack libraries.
+
+04.1
+Q.1
+Waiting
+
+Q.2
+onStart()
+
+Q.3
+onResume()
+
+Q.4
+Only once, when the activity is created.
