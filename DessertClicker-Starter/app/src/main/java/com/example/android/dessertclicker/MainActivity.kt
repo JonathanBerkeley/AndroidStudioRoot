@@ -28,40 +28,14 @@ import androidx.databinding.DataBindingUtil
 import com.example.android.dessertclicker.databinding.ActivityMainBinding
 import timber.log.Timber
 
+const val KEY_REVENUE = "revenue_key"
+const val KEY_DESSERT_SOLD = "dessert_sold_key"
+const val KEY_TIMER_SECONDS = "timer_seconds_key"
+
 class MainActivity : AppCompatActivity() {
-    override fun onStart() {
-        super.onStart()
-        //Log.i("MainActivity", "onStart Called")
-        Timber.i("onStart Called")
-    }
-
-    override fun onResume() {
-        super.onResume()
-        Timber.i("onResume was called")
-    }
-
-    override fun onPause() {
-        super.onPause()
-        Timber.i("onPause was called")
-    }
-
-    override fun onStop() {
-        super.onStop()
-        Timber.i("onStop was called")
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        Timber.i("onDestroy was called")
-    }
-
-    override fun onRestart() {
-        super.onRestart()
-        Timber.i("onRestart was called")
-    }
-
     private var revenue = 0
     private var dessertsSold = 0
+    private lateinit var dessertTimer : DessertTimer
 
     // Contains all the views
     private lateinit var binding: ActivityMainBinding
@@ -95,7 +69,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         //Log.i("MainActivity", "onCreate Called")
         Timber.i("onCreate Called")
 
@@ -106,6 +79,7 @@ class MainActivity : AppCompatActivity() {
             onDessertClicked()
         }
 
+        dessertTimer = DessertTimer(this.lifecycle)
         // Set the TextViews to the right values
         binding.revenue = revenue
         binding.amountSold = dessertsSold
@@ -179,5 +153,37 @@ class MainActivity : AppCompatActivity() {
             R.id.shareMenuButton -> onShare()
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    override fun onStart() {
+        super.onStart()
+        //Log.i("MainActivity", "onStart Called")
+        Timber.i("onStart Called")
+    }
+    override fun onResume() {
+        super.onResume()
+        Timber.i("onResume was called")
+    }
+    override fun onPause() {
+        super.onPause()
+        Timber.i("onPause was called")
+    }
+    override fun onStop() {
+        super.onStop()
+        Timber.i("onStop was called")
+    }
+    override fun onDestroy() {
+        super.onDestroy()
+        Timber.i("onDestroy was called")
+    }
+    override fun onRestart() {
+        super.onRestart()
+        Timber.i("onRestart was called")
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        Timber.i("onSaveInstanceState was called")
+        outState.putInt(KEY_REVENUE, revenue)
     }
 }
